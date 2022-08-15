@@ -1,0 +1,12 @@
+title Notes Web Sequence
+note over browser:
+the form submits the form data
+submit event gets caught in JS
+and JS adds new note to page
+and sends a copy to the server
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+Server handles the request
+end note
+server-->browser: 201 CREATED, processing request succeed

@@ -1,0 +1,15 @@
+title Notes Web Sequence
+note over browser:
+the form performs a post request
+with the form data
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server:
+Server handles the request
+and refers the user to notes page
+end note
+server-->browser: 302, location=/exampleapp/notes
+note over browser:
+browser changes url to
+<domain>/exampleapp/notes
+end note
